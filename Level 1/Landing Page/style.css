@@ -12,9 +12,10 @@ body {
 .root {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100VW;
     height: 100%;
     background-color: #000;
+    overflow-x: hidden;
 }
 
 .root header{
@@ -41,7 +42,7 @@ body {
    width: 10rem;
    height:4rem;
    margin-left: .5rem;
-   opacity: 1 ;
+  visibility: visible;
 }
 
 .root header .logo-small img {
@@ -51,7 +52,7 @@ body {
     position: absolute;
     margin-top: .5rem;
     left: 0;
-    opacity: 0;
+    visibility: hidden;
 }
  
 .root header .nav-options {
@@ -89,13 +90,13 @@ body {
     font-size: 1.8rem;
     position: absolute;
     right: 2rem;
-    opacity: 0;
+    visibility: hidden;
 }
 
 .root header .header-b .menu {
     color: #ffffffad;
     font-size: 1.8rem;
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     right: 2rem;
 }
@@ -113,7 +114,7 @@ body {
 }
 
 .root .container {
-    width: 100%;
+    width: 100VW;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -292,35 +293,39 @@ hr {
 
 @media (max-width: 900px) {
     .root header .logo img {
-        opacity: 0;
+        visibility: hidden;
     }
     .root header .logo-small img {
-        opacity: 1;
+        visibility: visible;
     }
 
     .root header .header-b .hide {
-        opacity: 0;
-    }
+        visibility: hidden ;
+    }    
     .root header .header-b .person {
-        opacity: 1;
+        visibility: visible;
     }
   }
 
   @media (max-width: 700px) {
+    .root {
+        width: auto;
+    }
+
     .root header .nav-options a {
-        opacity: 0;
+        visibility: hidden;
     }
     .root header .logo-small img {
-        opacity: 0;
+        visibility: hidden;
     }
     .root header .logo img {
-        opacity: 1;
+        visibility: visible;
     }
     .root header .header-b .person {
-        opacity: 0;
+        visibility: hidden;
     }
     .root header .header-b .menu {
-        opacity: 1;
+        visibility: visible;
     }
 
   }
