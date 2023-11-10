@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <h1 class="title">Temperature Converter</h1>
+            <div class="degree-type">
+                <div class="degree-field">
+                    <label for="degree">Degree</label>
+                    <input type="number" name="degree" id="degree" value="1" />
+                </div>
+
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="temperatures" id="temp-type" autocomplete="on">
+                        <option id="celsius" value="celsius">Celsius</option>
+                        <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                        <option id="kelvin" value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <button id="convert-btn">Convert</button>
+            <hr>
+            <div class="result-box">
+                <span class="result-heading">Result</span>
+                <div class="result">
+                    <h3 class="temp-value-1" id="temp-1"></h3>
+                    <h3 class="temp-value-2" id="temp-2"></h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
