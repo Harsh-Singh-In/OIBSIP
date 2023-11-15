@@ -4,6 +4,7 @@ const degree = document.querySelector("#degree");
 const convertBtn = document.querySelector("#convert-btn");
 const tempType = document.querySelector("#temp-type");
 const result = document.querySelector(".result-heading");
+const tempBox = document.querySelector(".temperature-converter");
 
 window.addEventListener("load", () => {
     tempField1.innerHTML = "";
@@ -17,6 +18,7 @@ convertBtn.addEventListener("click", () => {
     
     setTimeout(() => {
         convertBtn.innerHTML = "<span>Convert</span>";
+        tempBox.style.height = ("auto");
         result.style.visibility = ("visible");
     }, 1000);
     
@@ -61,5 +63,5 @@ function convertTemp() {
 
             tempField2.innerHTML = `${KelvinToFahrenheit.toFixed(3)} &deg;F`;
         }
-    }, 1200)
+    }, 1050)
 }
