@@ -22,11 +22,10 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 20px 25px 45px;
     min-width: 320px;
     width: 100%;
-    height: auto;
+    height: 260px;
     box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
     backdrop-filter: blur(21px);
 }
